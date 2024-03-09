@@ -8,7 +8,7 @@
 
 /* ============================================================= */
 * {box-sizing:border-box}
-
+ 
 /* Slideshow container */
 .slideshow-container{
   width:100%;
@@ -132,12 +132,7 @@ nav img{
     font-size: 20px;
 }
 
-@media screen and (max-width:700px){
-    .header .text-box ul{
-        width: 100%;
-    }
-    
-}
+
 
 .nav-links ul li::after{
     content: '';
@@ -241,8 +236,21 @@ nav .fa{
 
 
 @media(max-width: 700px){
+    
+    .text-box {
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .text-box h2{
+        font-size: 30px;
+    }
+
     .text-box h1{
         font-size: 20px;
+    }
+    .text-box ul li{
+        display: block;
     }
     .nav-links ul li{
         display: block;
