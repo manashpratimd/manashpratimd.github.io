@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+
+
+/* ============================================================= */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container{
+  width:100%;
+  position:relative;
+  margin: auto;
+  height:350px;
+  background-image: linear-gradient(to right, rgba(250, 250, 250,0.8), rgba(174, 86, 152, 0.3)),url('../images/culturalPhotos/rongGhar.jpeg');
+  z-index: 0;
+  /* opacity: 0.7; */
+  color: rgb(6, 63, 128);
+  font-weight: 20;
+  font-size: 35px;
+
+}
+
+.slideshow-container p{
+    font-size: 15px;
+    color:#121326;
+    padding-left: 72px;
+}
+
+.slideshow-container h2{
+    position:relative;
+    top: 20%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 10px 10px;
+    font-size:40px;
+    text-align: center;
+}
+
+.slideshow-container img{
+    width: 100%;
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+
+/* ============================================================= */
+
+/* .overlay-text{
+    position:absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    color: blue;
+    padding: 10px 10px;
+    font-size:20px;
+    text-align: center;
+} */
+
+
+
+.header{
+    min-height: 30vh;
+    /* max-height: fit-content; */
+    width: 100%;
+    background: rgb(237, 236, 236);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    /* z-index: 1; */
+}
+
+nav{
+    display: flex;
+    padding: 2% 04%;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    border-bottom: 1px solid silver;
+    z-index: 1;
+    
+
+}
+
+.home{
+    width: 160px;
+}
+
+nav img{
+    width: 90px;
+}
+
+
+.nav-links{
+    flex: 1;
+    text-align: left;
+    background: transparent;
+}
+
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+
+.nav-links ul li a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width:700px){
+    .header .text-box ul{
+        width: 100%;
+    }
+    
+}
+
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin:auto;
+    transition: 0.4s;
+}
+
+
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+
+.nav-links ul li ul.dropdown li{
+    display: inline block;
+    text-align: left;   
+}
+
+
+.nav-links ul li ul.dropdown{
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    padding: 1px;
+}
+
+.nav-links ul li:hover ul.dropdown{
+    display: block;
+}
+
+
+.text-box{
+    width: 90%;
+    color: rgba(0,0,0,0.7);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-5%);
+    text-align: justify;
+    font-family: "Open Sans", sans-serif;
+    /* z-index: 1; */
+    padding-left: 100px;
+    padding-right: 100px;
+    
+}
+
+.text-box ul li{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    list-style-position: inside;
+}
+
+
+.text-box h2{
+    font-size: 40px;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #497d8a;
+}
+
+.text-box h1{
+    font-size: 62px; 
+}
+
+
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #f44336;
+    position: relative;
+    cursor: pointer;
+}
+
+
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+
+nav .fa{
+    display: none;
+}
+
+
+@media(max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #f44336;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+
+    }
+}
+
+
+h1{
+    font-size: 36px;
+    font-weight: 1000;
+    padding-left: 70px;
+    padding-top: 50px;
+    
+}
+
+p{
+    color:#585858;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+h3{
+    text-align: left;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+/*--------------footer-------------*/
+
+#hero .container{
+    padding-top: 70px;
+}
+
+
+.footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+#footer{
+    background: #121326;
+    padding: 0 0 20px 0;
+    color: #fff;
+    font-size: 14px;
+}
+
+/* #footer .footer-top{
+    padding: 50px 0 50px 0;
+} */
+
+#footer .footer-top .footer-info {
+    /* margin-bottom: 15px; */
+    background: #121326;
+    color: #fff;
+    border-top: 4px solid #6baace;
+    text-align: left;
+    padding: 20px;
+}
+
+#footer .footer-top .footer-info h3 {
+    font-size: 36px;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+    line-height: 1;
+    font-weight: 700;
+    text-align: left;
+}
+
+
+/* .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+} */
+
+
+.icons .fa{
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px;
+}
+
+.fa-heart-o{
+    color:#f44336;
+}

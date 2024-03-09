@@ -1,0 +1,143 @@
+@import url(style.css);
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: #e4eeff;
+    
+}
+
+.text-box{
+    width: 80%;
+    color: #1c61d1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.text-box1{
+    width: 80%;
+    color: #1c61d1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
+
+.text-box1 h1{
+    font-size: 62px;
+}
+
+.hero-btn{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #3695f4;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn1{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: #3695f4;
+    position: relative;
+    cursor: pointer;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.campus{
+    width: 80%;
+    margin:auto;
+    text-align: center;
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+.campus-col{
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position:relative;
+    overflow:hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    top: 10%;
+
+}
+
+.campus-col1{
+    /*flex-basis: 15%;*/
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position:relative;
+    overflow:hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 10%;
+}
+
+.campus-col1 h4{
+    text-align: start;
+    
+}
+
+.campus-col1 desc{
+    padding: 15px;
+    text-align: center;
+}
+
+.campus p{
+    border: 3px solid rgb(78, 101, 248);
+    text-align: center;
+    background-color: rgb(78, 101, 248);
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    font-size: 30px;
+    width: 30%;
+}
+
+.campus h2{
+    border: 3px solid rgb(78, 101, 248);
+    text-align: left;
+    background-color: rgb(78, 101, 248);
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    width: 80%;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
