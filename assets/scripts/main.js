@@ -1,12 +1,14 @@
-const navLinks = document.getElementById("navLinks")
+var navLinks = document.getElementById("#mob-icon")
+var navclass = document.querySelector(".nav-links")
 
 function showMenu() {
-    navLinks.style.right = "0";
+    navclass.style.display = "block";
 }
 
 function hideMenu() {
-    navLinks.style.right = "-200px"
+    navclass.style.display = "none";
 }
+
 
 let nav = document.querySelector("nav");
 window.addEventListener("scroll", ()=>{
