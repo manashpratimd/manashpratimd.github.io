@@ -225,7 +225,7 @@ nav img{
     cursor: pointer;
 }
 
-
+ 
 .hero-btn:hover{
     border: 1px solid #f44336;
     background: #f44336;
@@ -273,13 +273,23 @@ nav #mob-icon{
         z-index: 2;
         transition: 1s;
     }
-    nav .fa{
+
+    nav #mob-icon{
         display: block;
-        color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
+
+
+    nav .fa{
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    
     .nav-links ul{
         padding: 30px;
 
