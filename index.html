@@ -18,19 +18,24 @@
 
             <div class="home" id="home">
                 
-                <a href="index.html"><img src="assets/images/conference logo.png"></a>
+                <a href="index.html"><img src="assets/images/conf_logo.png"></a>
 
             </div>
 
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fa fa-times" id="mob-icon" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html"><b>HOME</b></a></li>
                     <li><a href="committee.html"><b>COMMITTEE</b></a></li>
-                    <li><a href="call.html"><b>CALL FOR PAPER</b></a></li>
-                    <li><a href="tracks.html"><b>TRACKS</b></a></li>
+                    <li>
+                        <a href="call.html"><b>CALL FOR PAPER</b></a>
+                            <ul class="dropdown">
+                                <li><a href="./call.html#guidelines">Submission Guidelines</a></li>
+                                <li><a href="./call.html#confTracks">Tracks</a></li>
+                            </ul>
+                    </li><i class="fa fa-angle-down"></i>
+                    <li><a href="https://cmt3.research.microsoft.com/User/Register?ReturnUrl=%2FESCI2024"><b>REGISTRATION</b></a></li>
                     <li><a href="schedule.html"><b>SCHEDULE</b></a></li>
-                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
                     <li><a href="venue.html"><b>VENUE</b></a></li>
                 </ul>
             </div>
@@ -38,28 +43,27 @@
             <a href=""><img src="assets/images/AEC-logo.png" style="margin-right: 50px; margin-top: 6px;"></a>
             <a href=""><img src="assets/images/GU-logo.png"></a>
 
-            <i class="fa fa-bars" style="color: black;" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="mob-icon" style="color: black;" onclick="showMenu()"></i>
         </nav>
 
         
 
     <!-- ==================================================================================================== -->
-    <!-- Slideshow container -->
 <div class="slideshow-container">
     
     
         <h1>Conference on<br> 
-            Innovations in Computing and Electronics<br> 
-            for Sustainability.</h1>
+            Sustainable Development in<br> 
+            Electronics and Computing</h1>
+        <p><b>With special focus on Digital Platforms and Semiconductors</b></p>
         <p><b>18-19 October | Guwahati</b></p>
     
     
 </div>
-  <!-- <div class="overlay-text">ICICES</div> -->
   <br>
   <div class="text-box">
-    <h2>About the ICICES Conference</h2><br>
-    International Conference in Computing and Electronics for Sustainability (ICICES) is a research conference 
+    <h2>About the ICSDEC Conference</h2><br>
+    International Conference on Sustainable Development in Electronics and Computing is a research conference 
     organised by Assam Engineering College and Guahati University. The primary vision of the conference is to help bridge the
     gap between sustainability and innovations.
 
@@ -89,7 +93,7 @@
             <div class="container">
                 <div class="footer-info">
 
-                    <h3>ICICES 2024</h3>
+                    <h3>ICSDEC 2024</h3>
                     <p>18-19 October 2024</p>
                     <p>Guwahati, Assam</p>
                     <p>example.conf@icices.org</p>

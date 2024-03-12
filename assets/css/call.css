@@ -1,5 +1,11 @@
 @import "style.css";
 
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 .header{
     min-height: 100vh;
     width: 100%;
@@ -42,6 +48,11 @@
     text-align: left;
     background-position: center;
     
+}
+
+.tracks{
+    width: 100%;
+    background-color: rgb(167, 179, 184);
 }
 
 div{
@@ -101,11 +112,77 @@ div{
 
 }
 
+
+.row{
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.campus{
+    width: 80%;
+    margin:auto;
+    /* text-align: center; */
+    text-decoration: none;
+}
+
+
+.campus-col1{
+    /*flex-basis: 15%;*/
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position:relative;
+    overflow:hidden;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    top: 10%;
+}
+
+
+.campus-col1 h3{
+    text-align: left;
+}
+
+.campus-col1 ul{
+    list-style-position: inside;
+    list-style-type:square;
+    padding: 20px 0;
+    position: relative;
+    align-items: center;
+}
+
+.campus-col1 ul li{
+    display: flex;
+    padding: 5px 0;
+    align-items: center;
+    list-style-position: inside;
+}
+
+@media screen and(max-width:600px) {
+    .campus-col1{
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 1000px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+.campus-col1 h4{
+    text-align: start;
+    
+}
+
 .text-box1{
     margin: 50px auto;
     width: 70%;
     justify-content: space-between;
-    padding-bottom: 250px;
     line-height: 1.9;
 }
 
@@ -115,6 +192,7 @@ div{
     padding-top: 0px;
     padding-bottom: 10px;
     color: #034d6d;
+    text-align: center;
 }
 
 h3{

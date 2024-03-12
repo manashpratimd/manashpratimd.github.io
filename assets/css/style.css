@@ -147,11 +147,14 @@ nav img{
 
 .nav-links ul li:hover::after{
     width: 100%;
+    display: block;
 }
 
 .nav-links ul li ul.dropdown li{
     display: inline block;
-    text-align: left;   
+    text-align: left;
+    background-color: white;   
+    width: 100%;
 }
 
 
@@ -216,8 +219,8 @@ nav img{
     color: #fff;
     border: 1px solid #fff;
     padding: 12px 34px;
-    font-size: 13px;
-    background: #f44336;
+    font-size: 20px;
+    background: #1d3878;
     position: relative;
     cursor: pointer;
 }
@@ -230,7 +233,7 @@ nav img{
 }
 
 
-nav .fa{
+nav #mob-icon{
     display: none;
 }
 

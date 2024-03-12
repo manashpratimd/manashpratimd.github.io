@@ -1,4 +1,10 @@
-@import url(style.css);
+@import "style.css";
+
+
+html{
+    scroll-behavior: smooth;
+}
+
 
 .header{
     min-height: 100vh;
@@ -64,6 +70,10 @@
     justify-content: space-evenly;
 }
 
+
+
+
+
 .campus{
     width: 80%;
     margin:auto;
@@ -98,9 +108,23 @@
     top: 10%;
 }
 
+.campus-col2{
+    margin-bottom: 10px;
+    position: relative;
+    height:15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 10%;
+}
+
 .campus-col1 h4{
     text-align: start;
     
+}
+
+.campus-col1 img{
+    border-radius: 50%;
 }
 
 .campus-col1 desc{
@@ -109,26 +133,49 @@
 }
 
 .campus p{
-    border: 3px solid rgb(78, 101, 248);
     text-align: center;
-    background-color: rgb(78, 101, 248);
+    background-color: rgb(64, 68, 94);
     color: white;
     font-weight: 400;
     text-decoration: none;
     display: inline-block;
     padding: 7px;
     font-size: 30px;
-    width: 30%;
+    width: 40%;
 }
 
 .campus h2{
     border: 3px solid rgb(78, 101, 248);
-    text-align: left;
-    background-color: rgb(78, 101, 248);
+    text-align: center;
+    background-color: rgb(64, 68, 94);
     color: white;
     font-weight: 400;
     text-decoration: none;
     width: 80%;
+}
+
+
+@media(max-width: 700px){
+    .row{
+        flex-direction: column;
+    }
+
+    .campus-col1 img{
+        width: 200px;
+        height: auto;
+        
+    }
+    
+    div.campus-col1{
+        margin-bottom: 16px;
+        height: 280px;
+        align-items: center;
+    }
+
+    .campus p{
+        width: 80%;
+    }
+
 }
 
 .layer{

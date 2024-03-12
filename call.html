@@ -12,39 +12,41 @@
 </head>
 <body>
     <section class="header">
-         
+        
         <nav>
 
             <div class="home" id="home">
                 
-                <a href="index.html"><img src="assets/images/conference logo.png"></a>
+                <a href="index.html"><img src="assets/images/conf_logo.png"></a>
 
             </div>
 
             <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                
+                <i class="fa fa-times" id="mob-icon" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html"><b>HOME</b></a></li>
                     <li><a href="committee.html"><b>COMMITTEE</b></a></li>
-                    <li><a href="call.html"><b>CALL FOR PAPER</b></a></li>
-                    <li><a href="tracks.html"><b>TRACKS</b></a></li>
+                    <li>
+                        <a href="call.html"><b>CALL FOR PAPER</b></a>
+                            <ul class="dropdown">
+                                <li><a href="./call.html#guidelines">Submission Guidelines</a></li>
+                                <li><a href="./call.html#confTracks">Tracks</a></li>
+                            </ul>
+                    </li><i class="fa fa-angle-down"></i>
+                    <li><a href="https://cmt3.research.microsoft.com/User/Register?ReturnUrl=%2FESCI2024"><b>REGISTRATION</b></a></li>
                     <li><a href="schedule.html"><b>SCHEDULE</b></a></li>
-                    <li><a href="contact.html"><b>CONTACT US</b></a></li>
                     <li><a href="venue.html"><b>VENUE</b></a></li>
                 </ul>
-
             </div>
 
             <a href=""><img src="assets/images/AEC-logo.png" style="margin-right: 50px; margin-top: 6px;"></a>
             <a href=""><img src="assets/images/GU-logo.png"></a>
 
-            <i class="fa fa-bars" style="color: black;" onclick="showMenu()"></i>
+            <i class="fa fa-bars" id="mob-icon" style="color: black;" onclick="showMenu()"></i>
         </nav>
- 
 
     <div class="callforpaper">    
-        <div class="text-box1">
+        <div id="guidelines" class="text-box1">
             <p><h2>Call for Papers</h2>
                 <span id="spanpara" style="color: #497d8a; font-size: 25px;"><b>ICICES: International Conference on Innovations in Computing and Electronics for Sustainability</b> invites all authors to associate with us for the upcoming conference.</span>
             
@@ -58,10 +60,10 @@
                 <li><b>Camera-Ready Paper Submission:</b> Assign Date</li>
                 <li><b>Conference Dates:</b> Assign Date</li>
             </ul>
+            <br>
 
             
             <h3>SUBMISSION GUIDELINES</h3>
-            <br>
             
             Authors are invited to submit their formatted, complete papers. 
             All submission will be double-blind peer reviewed and evalulated based on relevance, originality, 
@@ -102,13 +104,67 @@
             Accepted papers at ICICES 2024 will be published in XYZ and authors will be alloted a time slot for
                 presenting their work at the conference.
             </p>
-        
+            <div align="center">
+                <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FESCI2024" class="hero-btn">Submit Paper</a>
+            </div>
         </div>
     </div>
+
 </section>
-    <!-- <div class="text-box">
-        <a href="https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FESCI2024" class="hero-btn">Submit Paper</a>
-    </div> -->
+
+
+    <div class="tracks">
+        <div id="confTracks" class="text-box1" style="align-content: center;">
+            <h2 style="color: rgb(21, 23, 68);">Conference Tracks</h2>
+        </div>
+
+
+        <div class="campus">
+
+            <div class="row">
+                <div class="campus-col1">
+                    <h2>Computing</h2>
+                    <div>
+                        <ul>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Green Computing</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Embedded Computing</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; High Performance Computing</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Distributed and parallel systems</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                
+                <div class="campus-col1">
+                    <h2>Electronics</h2>
+                    <div>
+                        <ul>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Devices</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Communication technologies</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; VLSI Designing and Modelling</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Embedded software and hardware</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                <div class="campus-col1">
+                    <h2>Artificial Intelligence</h2>
+                    <div>
+                        <ul>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Deep Learning</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Generative Models</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Large Language Models</li>
+                        <li><i class="fa fa-chevron-circle-right"> </i>&nbsp; Computational Optimization</li>
+                        </ul>
+                    </div>
+                </div>
+
+                    
+            </div>
+    </div>
+    </div>
+
 
 </section>
 
