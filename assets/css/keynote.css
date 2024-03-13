@@ -1,0 +1,144 @@
+@import "style.css";
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: #e4eeff;
+}
+
+.registration{
+    width: 100%;
+    text-align: left;
+    background: rgb(246, 237, 217);
+    padding-bottom: 20px;
+    /* background-position: center; */
+    
+}
+
+.registration h2{
+    padding-left: 60px;
+    padding-top: 60px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.registration p{
+    margin: 1%;
+    font-size: 20px;
+}
+
+.registration ul{
+    list-style-position: inside;
+    list-style-type:square;
+    padding: 20px 60px;
+    /* margin: 5%; */
+    position: relative;
+    align-items: center;
+}
+
+.registration ul li{
+    /* display: flex; */
+    padding: 5px 0;
+    align-items: center;
+    list-style-position: inside;
+}
+
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    background: #1d3878;
+    position: relative;
+    cursor: pointer;
+}
+ 
+.hero-btn:hover{
+    border: 1px solid #f44336;
+    background: #f44336;
+    transition: 0.5s;
+}
+
+
+.participation{
+    margin-top: 4%;
+    width: 70%;
+    text-align: center;
+    background: rgb(100, 165, 193);
+    padding-bottom: 20px;
+    translate: 20%;
+    margin-bottom: 4%;
+    /* background-position: center; */
+}
+
+.participation h2{
+    padding-top: 10px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.participation p{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgb(6, 60, 87);
+}
+
+.participation ul{
+    display: inline;
+    list-style-position: inside;
+    list-style-type:square;
+    padding: 20px 60px;
+    /* margin: 5%; */
+    position: relative;
+    vertical-align: middle;
+}
+
+.participation table {
+    width: 80%;
+    text-align: center;
+    /* vertical-align: middle; */
+    margin-left: 9%;
+    margin-right: 4%;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+
+th, td{
+    
+    padding: 8px;
+}
+
+td{
+    text-align: left;
+}
+
+.participation thead th{
+    width: 80%;
+}
+
+thead{
+    background-color: #02203d;
+    color: white;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #fff;
+
+}
+
+tbody tr:nth-child(even) {
+    background-color: #eee;
+  }
