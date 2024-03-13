@@ -129,7 +129,7 @@ nav img{
 .nav-links ul li a{
     color: #000000;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 
@@ -180,7 +180,6 @@ nav img{
     transform: translate(-50%,-5%);
     text-align: justify;
     font-family: "Open Sans", sans-serif;
-    /* z-index: 1; */
     padding-left: 100px;
     padding-right: 100px;
     

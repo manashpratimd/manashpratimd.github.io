@@ -1,0 +1,125 @@
+@import "style.css";
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background: #e4eeff;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.campus{
+    width: 80%;
+    margin:auto;
+    text-align: left;
+    padding-top: 50px;
+    text-decoration: none;
+}
+
+.campus p{
+    text-align: left;
+    color: rgb(97, 174, 221);
+    font-weight: 400;
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px;
+    font-size: 22px;
+    width: 50%;
+}
+
+.campus-col1{
+    width: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    margin-bottom: 60px;
+    position:relative;
+    /* overflow:hidden; */
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 10%;
+}
+
+.campus-col1 img{
+  
+    height: auto;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+    /* border-radius: 6%; */
+}
+
+.campus-col1 iframe{
+    height: auto;
+    width: auto;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+.campus-col1 desc{
+    padding: 15px;
+    text-align: center;
+}
+
+
+.campus-col1:hover{
+    opacity: 0.5;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer h3{
+    width: 70%;
+    font-weight: 500;
+    color: #b23a3a;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+    position: absolute;
+}
+
+
+
+
+
+.text-box{
+    width: 80%;
+    color: #1c61d1;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: left;
+}
