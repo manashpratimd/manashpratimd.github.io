@@ -13,7 +13,8 @@ html{
     background-size: cover;
     position: relative;
     text-align: left;
-    background: #e4eeff;
+    background-image: url("../images/dots.png");
+    /* background: #e4eeff; */
 }
 
 
@@ -49,7 +50,7 @@ html{
     background-position: center;
     
 }
-
+ 
 .tracks{
     width: 100%;
     background-color: rgb(167, 179, 184);

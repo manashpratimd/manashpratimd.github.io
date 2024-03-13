@@ -10,7 +10,8 @@ html{
     background-position: center;
     background-size: cover;
     position: relative;
-    background: #e4eeff;
+    background-image: url("../images/dots.png");
+    /* background: #e4eeff; */
 }
 
 .registration{
