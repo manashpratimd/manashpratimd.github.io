@@ -72,37 +72,6 @@ div{
 }
 
 
-@media(max-width: 700px){
-    .text-box h1{
-        font-size: 20px;
-    }
-    .nav-links ul li{
-        display: block;
-    }
-    .nav-links{
-        position: absolute;
-        background: #f44336;
-        height: 100vh;
-        width: 200px;
-        top: 0;
-        right: -200px;
-        text-align: left;
-        z-index: 2;
-        transition: 1s;
-    }
-    nav .fa{
-        display: block;
-        color: #fff;
-        margin: 10px;
-        font-size: 22px;
-        cursor: pointer;
-    }
-    .nav-links ul{
-        padding: 30px;
-
-    }
-}
-
 .callforpaper{
     display: flex; 
     justify-content: space-evenly;
@@ -135,7 +104,7 @@ div{
     margin-bottom: 60px;
     position:relative;
     overflow:hidden;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -162,18 +131,7 @@ div{
     list-style-position: inside;
 }
 
-@media screen and(max-width:600px) {
-    .campus-col1{
-        width: 50%;
-    }
 
-}
-
-@media(max-width: 1000px){
-    .row{
-        flex-direction: column;
-    }
-}
 
 .campus-col1 h4{
     text-align: start;
@@ -230,8 +188,47 @@ h3{
     padding-right: 30px;
 }
 
+#spanpara{
+    font-size: 25px;
+}
 
 .next{
     min-height: 100vh;
     text-align: center;
+}
+
+
+@media screen and(max-width:600px) {
+    .campus-col1{
+        width: 50%;
+    }
+
+}
+
+@media(max-width: 700px){
+
+    .text-box1 h2{
+        font-size: 25px;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    #spanpara{
+        font-size: 17px;
+        margin:0;
+    }
+
+    h3{
+        font-size:20px;
+    }
+
+    .campus .row .campus-col1 h2{
+        font-size: 20px;
+    }
+
+    .campus .row .campus-col1 ul li{
+        font-size: 17px;
+    }
 }

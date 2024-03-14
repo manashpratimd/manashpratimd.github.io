@@ -180,49 +180,6 @@ html{
 }
 
 
-
-
-/* .layer{
-    background: rgba(0, 0, 0, 0.2);
-    color: #fff; */
-    /* height: 100%; */
-    /* width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-    opacity: 0;
-    h3 {
-        padding-top: 3%;
-    }
-} */
-
-
-
-/* .layer h3{
-    width: 70%;
-    font-weight: 500;
-    color: #b23a3a;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-} */
-
-
-/* .layer:hover h3{
-    bottom: 49%;
-    opacity: 1;
-    position: absolute;
-} */
-
-
-
-
-
 .text-box{
     width: 80%;
     color: #1c61d1;
@@ -231,4 +188,14 @@ html{
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: left;
+}
+
+@media (max-width:700px){
+    .campus2 p{
+        font-size:18px;
+    }
+    
+    .container-new .bg img{
+        width:100%
+    }
 }

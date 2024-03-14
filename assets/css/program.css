@@ -143,3 +143,15 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even) {
     background-color: #eee;
   }
+
+
+@media (max-width:700px){
+    .participation{
+        width:90%;
+        transform: translate(-14%);
+    }
+
+    iframe{
+        width:90%;
+    }
+}

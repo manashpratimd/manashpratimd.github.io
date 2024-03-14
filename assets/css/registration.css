@@ -143,3 +143,34 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even) {
     background-color: #eee;
   }
+
+
+@media (max-width:700px){
+    .registration h2{
+        font-size:25px
+    }
+
+    .participation{
+        width:90%;
+        transform: translate(-14%);
+    }
+
+    .participation thead{
+        font-size: 0.6rem;;
+    }
+
+    tbody tr{
+        font-size: 0.7rem;
+    }
+
+    .participation ul{
+        padding-left: 3%;
+        padding-right: 3%;
+        display: inline-block;
+        /* vertical-align: middle; */
+        text-align: left;
+    }
+    .participation ul li{
+        font-size: 0.9rem;
+    }
+}
