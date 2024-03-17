@@ -1,6 +1,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+#inrIcon::after{
+  content: "\00a0";
+ }
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
@@ -1616,3 +1620,4 @@ section {
 #footer .credits {
   font-size: 13px;
 }
+
